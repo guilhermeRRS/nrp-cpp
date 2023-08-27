@@ -1,6 +1,7 @@
 #ifndef Holder_H
 #define Holder_H
 
+#include <string>
 #include <vector>
 
 using namespace std;
@@ -14,9 +15,16 @@ public:
     vector<Method *<Tsol, Tchange, Tm>> methods;
     Problem<Tsol, Tm> *problem;
 
-    // the explanation functions
-    virtual void printCmd() { NotImplemented(); };
-    virtual void explainCmd() { NotImplemented(); };
+    // constructor
+    Holder();
+
+    // debug functions
+    virtual void debugCmd() { NotImplemented(); };
+    virtual string debugStr() { NotImplemented(); };
+
+    // documentation functions
+    virtual void docCmd() { NotImplemented(); };
+    virtual string docStr() { NotImplemented(); };
 };
 
 #endif

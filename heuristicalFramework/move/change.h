@@ -1,6 +1,8 @@
 #ifndef Change_H
 #define Change_H
 
+#include <string>
+
 using namespace std;
 
 template <typename Tchange>
@@ -11,12 +13,16 @@ class Change
 public:
     Tchange change;
 
-    Change() { NotImplemented(); }
+    // constructor
+    Change();
 
-    // the explanation functions
-    virtual void printCmd() { NotImplemented(); };
-    virtual void explainCmd() { NotImplemented(); };
-    virtual string explainStr() { NotImplemented(); };
+    // debug functions
+    virtual void debugCmd() { NotImplemented(); };
+    virtual string debugStr() { NotImplemented(); };
+
+    // documentation functions
+    virtual void docCmd() { NotImplemented(); };
+    virtual string docStr() { NotImplemented(); };
 };
 
 #endif

@@ -1,7 +1,8 @@
 #ifndef Objective_H
 #define Objective_H
 
-#include "../move/change.h"
+#include <string>
+#include <vector>
 
 using namespace std;
 
@@ -16,13 +17,16 @@ public:
     vector<Change<Tchange>> changes;
     int objective;
 
-    Objective() { NotImplemented(); }
+    // constructor
+    Objective();
 
-    virtual int calculate() { NotImplemented(); };
+    // debug functions
+    virtual void debugCmd() { NotImplemented(); };
+    virtual string debugStr() { NotImplemented(); };
 
-    // the explanation functions
-    virtual void printCmd() { NotImplemented(); };
-    virtual void explainCmd() { NotImplemented(); };
+    // documentation functions
+    virtual void docCmd() { NotImplemented(); };
+    virtual string docStr() { NotImplemented(); };
 };
 
 #endif

@@ -1,6 +1,7 @@
 #ifndef Method_H
 #define Method_H
 
+#include <string>
 #include <vector>
 
 using namespace std;
@@ -15,11 +16,16 @@ public:
     Data *data;
     Model<Tm> *model;
 
-    Problem() { NotImplemented(); }
+    // constructor
+    Method();
 
-    // the explanation functions
-    virtual void printCmd() { NotImplemented(); };
-    virtual void explainCmd() { NotImplemented(); };
+    // debug functions
+    virtual void debugCmd() { NotImplemented(); };
+    virtual string debugStr() { NotImplemented(); };
+
+    // documentation functions
+    virtual void docCmd() { NotImplemented(); };
+    virtual string docStr() { NotImplemented(); };
 };
 
 #endif

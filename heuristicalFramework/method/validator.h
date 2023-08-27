@@ -1,8 +1,6 @@
 #ifndef Validator_H
 #define Validator_H
 
-#include "../move/change.h"
-
 using namespace std;
 
 template <typename Tsol, typename Tchange>
@@ -16,13 +14,18 @@ public:
     vector<Change<Tchange>> changes;
     bool valid;
 
-    Validator() { NotImplemented(); }
+    // constructor
+    Validator();
 
     virtual bool validate() { NotImplemented(); };
 
-    // the explanation functions
-    virtual void printCmd() { NotImplemented(); };
-    virtual void explainCmd() { NotImplemented(); };
+    // debug functions
+    virtual void debugCmd() { NotImplemented(); };
+    virtual string debugStr() { NotImplemented(); };
+
+    // documentation functions
+    virtual void docCmd() { NotImplemented(); };
+    virtual string docStr() { NotImplemented(); };
 };
 
 #endif

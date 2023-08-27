@@ -1,6 +1,7 @@
 #ifndef MoveGen_H
 #define MoveGen_H
 
+#include <string>
 #include <vector>
 
 using namespace std;
@@ -16,13 +17,19 @@ public:
     vector<Change<Tchange>> changes;
     bool successGenerating;
 
+    // constructor
     MoveGen();
 
+    // essential functions
     virtual bool generate();
 
-    // the explanation functions
-    virtual void printCmd();
-    virtual void explainCmd();
+    // debug functions
+    virtual void debugCmd() { NotImplemented(); };
+    virtual string debugStr() { NotImplemented(); };
+
+    // documentation functions
+    virtual void docCmd() { NotImplemented(); };
+    virtual string docStr() { NotImplemented(); };
 };
 
 #endif
