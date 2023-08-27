@@ -1,6 +1,13 @@
 #ifndef Problem_H
 #define Problem_H
 
+#include "../notImplemented.h"
+
+#include "solution.h"
+#include "data.h"
+#include "model.h"
+
+#include <string>
 #include <vector>
 
 using namespace std;
@@ -15,11 +22,16 @@ public:
     Data *data;
     Model<Tm> *model;
 
-    Problem() { NotImplemented(); }
+    // constructor
+    Problem();
 
-    // the explanation functions
-    virtual void printCmd() { NotImplemented(); };
-    virtual void explainCmd() { NotImplemented(); };
+    // debug functions
+    virtual void debugCmd();
+    virtual string debugStr();
+
+    // documentation functions
+    virtual void docCmd();
+    virtual string docStr();
 };
 
 #endif

@@ -1,26 +1,10 @@
 #include "moveGen.h"
 
-#include "../notImplemented.h"
-
-#include <string>
-#include <vector>
-
-using namespace std;
-
 /*
             constructor
 */
 template <typename Tsol, typename Tchange>
-MoveGen<Tsol, Tchange>::MoveGen()
-{
-    NotImplemented();
-};
-
-/*
-            essential functions
-*/
-template <typename Tsol, typename Tchange>
-bool MoveGen<Tsol, Tchange>::generate() { NotImplemented(); };
+MoveGen<Tsol, Tchange>::MoveGen() { NotImplemented(); };
 
 /*
             debug functions

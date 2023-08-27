@@ -1,11 +1,5 @@
 #include "change.h"
 
-#include "../notImplemented.h"
-
-#include <string>
-
-using namespace std;
-
 /*
             constructor
 */

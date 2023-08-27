@@ -1,6 +1,10 @@
 #ifndef Solution_H
 #define Solution_H
 
+#include "../notImplemented.h"
+
+#include <string>
+
 using namespace std;
 
 template <typename Tsol>
@@ -17,13 +21,16 @@ public:
     int obj;
     int errorStats;
 
-    Solution() { NotImplemented(); }
+    // constructor
+    Solution();
 
-    virtual void getSolution() { NotImplemented(); };
+    // debug functions
+    virtual void debugCmd();
+    virtual string debugStr();
 
-    // the explanation functions
-    virtual void printCmd() { NotImplemented(); };
-    virtual void explainCmd() { NotImplemented(); };
+    // documentation functions
+    virtual void docCmd();
+    virtual string docStr();
 };
 
 #endif

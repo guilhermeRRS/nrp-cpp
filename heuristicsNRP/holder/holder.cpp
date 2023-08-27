@@ -9,15 +9,26 @@ class HolderNRP : public Holder<void, void, void>
 {
 
 public:
-    HolderNRP() {}
+    // constructor
+    HolderNRP() { cout << "Alive" << endl; };
 
-    void printCmd()
+    // debug functions
+    void debugCmd()
     {
-        cout << "Holder class has not a written print";
+        cout << "Me" << endl;
+    }
+    string debugStr()
+    {
+        return "Me";
     }
 
-    void explainCmd()
+    // documentation functions
+    void docCmd()
     {
-        cout << "Holder class for NRP. It is able to dispath its process for different models";
+        cout << "Me" << endl;
+    }
+    string docStr()
+    {
+        return "Me";
     }
 };

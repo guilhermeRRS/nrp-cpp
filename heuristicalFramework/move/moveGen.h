@@ -1,6 +1,12 @@
 #ifndef MoveGen_H
 #define MoveGen_H
 
+#include "../notImplemented.h"
+
+#include "../problem/solution.h"
+#include "../problem/data.h"
+#include "../move/change.h"
+
 #include <string>
 #include <vector>
 
@@ -20,16 +26,13 @@ public:
     // constructor
     MoveGen();
 
-    // essential functions
-    virtual bool generate();
-
     // debug functions
-    virtual void debugCmd() { NotImplemented(); };
-    virtual string debugStr() { NotImplemented(); };
+    virtual void debugCmd();
+    virtual string debugStr();
 
     // documentation functions
-    virtual void docCmd() { NotImplemented(); };
-    virtual string docStr() { NotImplemented(); };
+    virtual void docCmd();
+    virtual string docStr();
 };
 
 #endif

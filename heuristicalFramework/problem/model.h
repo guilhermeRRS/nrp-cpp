@@ -1,6 +1,10 @@
 #ifndef Model_H
 #define Model_H
 
+#include "../notImplemented.h"
+
+#include <string>
+
 using namespace std;
 
 template <typename Tm>
@@ -13,13 +17,16 @@ public:
 
     bool empty;
 
-    Model() { NotImplemented(); }
+    // constructor
+    Model();
 
-    virtual void getModel() { NotImplemented(); };
+    // debug functions
+    virtual void debugCmd();
+    virtual string debugStr();
 
-    // the explanation functions
-    virtual void printCmd() { NotImplemented(); };
-    virtual void explainCmd() { NotImplemented(); };
+    // documentation functions
+    virtual void docCmd();
+    virtual string docStr();
 };
 
 #endif

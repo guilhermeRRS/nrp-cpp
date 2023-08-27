@@ -1,6 +1,12 @@
 #ifndef Method_H
 #define Method_H
 
+#include "../notImplemented.h"
+
+#include "../move/moveGen.h"
+#include "../problem/data.h"
+#include "../problem/model.h"
+
 #include <string>
 #include <vector>
 
@@ -20,12 +26,12 @@ public:
     Method();
 
     // debug functions
-    virtual void debugCmd() { NotImplemented(); };
-    virtual string debugStr() { NotImplemented(); };
+    virtual void debugCmd();
+    virtual string debugStr();
 
     // documentation functions
-    virtual void docCmd() { NotImplemented(); };
-    virtual string docStr() { NotImplemented(); };
+    virtual void docCmd();
+    virtual string docStr();
 };
 
 #endif

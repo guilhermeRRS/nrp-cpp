@@ -1,6 +1,10 @@
 #ifndef Data_H
 #define Data_H
 
+#include "../notImplemented.h"
+
+#include <string>
+
 using namespace std;
 
 class Data
@@ -10,13 +14,16 @@ public:
     bool empty;
     bool valid;
 
-    Data() { NotImplemented(); }
+    // constructor
+    Data();
 
-    virtual void getData() { NotImplemented(); };
+    // debug functions
+    virtual void debugCmd();
+    virtual string debugStr();
 
-    // the explanation functions
-    virtual void printCmd() { NotImplemented(); };
-    virtual void explainCmd() { NotImplemented(); };
+    // documentation functions
+    virtual void docCmd();
+    virtual string docStr();
 };
 
 #endif

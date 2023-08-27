@@ -7,6 +7,6 @@ using namespace std;
 int main(int argc, char **argv)
 {
   HolderNRP holder = HolderNRP();
-  holder.printCmd();
+  holder.debugCmd();
   return 0;
 }

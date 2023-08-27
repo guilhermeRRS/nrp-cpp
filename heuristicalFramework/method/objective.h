@@ -1,6 +1,8 @@
 #ifndef Objective_H
 #define Objective_H
 
+#include "../notImplemented.h"
+
 #include <string>
 #include <vector>
 
@@ -21,12 +23,12 @@ public:
     Objective();
 
     // debug functions
-    virtual void debugCmd() { NotImplemented(); };
-    virtual string debugStr() { NotImplemented(); };
+    virtual void debugCmd();
+    virtual string debugStr();
 
     // documentation functions
-    virtual void docCmd() { NotImplemented(); };
-    virtual string docStr() { NotImplemented(); };
+    virtual void docCmd();
+    virtual string docStr();
 };
 
 #endif

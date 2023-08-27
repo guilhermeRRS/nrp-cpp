@@ -1,12 +1,5 @@
 #include "objective.h"
 
-#include "../notImplemented.h"
-
-#include <string>
-#include <vector>
-
-using namespace std;
-
 /*
             constructor
 */
