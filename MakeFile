@@ -1,0 +1,21 @@
+CXX := g++
+CXXFLAGS := -Wall
+TARGET := bin/my_app
+SRCDIR := src
+INCDIR := include
+SRCS := $(wildcard $(SRCDIR)/*.cpp $(SRCDIR)/*/*.cpp)
+OBJS := $(patsubst $(SRCDIR)/%.cpp,%.o,$(SRCS))
+INCFLAGS := -I$(INCDIR)
+
+%.o: $(SRCDIR)/%.cpp
+    $(CXX) $(CXXFLAGS) $(INCFLAGS) -c $< -o $@
+
+$(TARGET): $(OBJS)
+    $(CXX) $(CXXFLAGS) $(INCFLAGS) $^ -o $@
+
+.PHONY: clean
+
+clean:
+    rm -f $(OBJS) $(TARGET)
+
+all: $(TARGET)
