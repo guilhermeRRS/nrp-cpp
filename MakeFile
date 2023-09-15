@@ -13,7 +13,7 @@ INCFLAGS := -I$(INCDIR)
 $(TARGET): $(OBJS)
     $(CXX) $(CXXFLAGS) $(INCFLAGS) $^ -o $@
 
-.PHONY: clean
+.PHONY: cle an
 
 clean:
     rm -f $(OBJS) $(TARGET)
