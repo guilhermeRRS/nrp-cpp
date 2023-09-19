@@ -62,7 +62,9 @@ CMAKE_BINARY_DIR = C:\Users\user\Desktop\NRP\dist
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/nrp.dir/all
+all: CMakeFiles/theapp.dir/all
+all: CMakeFiles/heuristicalFramework.dir/all
+all: CMakeFiles/heuristicsNRP.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -70,34 +72,89 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/nrp.dir/clean
+clean: CMakeFiles/theapp.dir/clean
+clean: CMakeFiles/heuristicalFramework.dir/clean
+clean: CMakeFiles/heuristicsNRP.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/nrp.dir
+# Target rules for target CMakeFiles/theapp.dir
 
 # All Build rule for target.
-CMakeFiles/nrp.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\nrp.dir\build.make CMakeFiles/nrp.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\nrp.dir\build.make CMakeFiles/nrp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\user\Desktop\NRP\dist\CMakeFiles --progress-num=1,2 "Built target nrp"
-.PHONY : CMakeFiles/nrp.dir/all
+CMakeFiles/theapp.dir/all: CMakeFiles/heuristicalFramework.dir/all
+CMakeFiles/theapp.dir/all: CMakeFiles/heuristicsNRP.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\theapp.dir\build.make CMakeFiles/theapp.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\theapp.dir\build.make CMakeFiles/theapp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\user\Desktop\NRP\dist\CMakeFiles --progress-num=15,16 "Built target theapp"
+.PHONY : CMakeFiles/theapp.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/nrp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\NRP\dist\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/nrp.dir/all
+CMakeFiles/theapp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\NRP\dist\CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/theapp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\NRP\dist\CMakeFiles 0
-.PHONY : CMakeFiles/nrp.dir/rule
+.PHONY : CMakeFiles/theapp.dir/rule
 
 # Convenience name for target.
-nrp: CMakeFiles/nrp.dir/rule
-.PHONY : nrp
+theapp: CMakeFiles/theapp.dir/rule
+.PHONY : theapp
 
 # clean rule for target.
-CMakeFiles/nrp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\nrp.dir\build.make CMakeFiles/nrp.dir/clean
-.PHONY : CMakeFiles/nrp.dir/clean
+CMakeFiles/theapp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\theapp.dir\build.make CMakeFiles/theapp.dir/clean
+.PHONY : CMakeFiles/theapp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/heuristicalFramework.dir
+
+# All Build rule for target.
+CMakeFiles/heuristicalFramework.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\user\Desktop\NRP\dist\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target heuristicalFramework"
+.PHONY : CMakeFiles/heuristicalFramework.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/heuristicalFramework.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\NRP\dist\CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/heuristicalFramework.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\NRP\dist\CMakeFiles 0
+.PHONY : CMakeFiles/heuristicalFramework.dir/rule
+
+# Convenience name for target.
+heuristicalFramework: CMakeFiles/heuristicalFramework.dir/rule
+.PHONY : heuristicalFramework
+
+# clean rule for target.
+CMakeFiles/heuristicalFramework.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/clean
+.PHONY : CMakeFiles/heuristicalFramework.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/heuristicsNRP.dir
+
+# All Build rule for target.
+CMakeFiles/heuristicsNRP.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicsNRP.dir\build.make CMakeFiles/heuristicsNRP.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicsNRP.dir\build.make CMakeFiles/heuristicsNRP.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\user\Desktop\NRP\dist\CMakeFiles --progress-num=13,14 "Built target heuristicsNRP"
+.PHONY : CMakeFiles/heuristicsNRP.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/heuristicsNRP.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\NRP\dist\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/heuristicsNRP.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\NRP\dist\CMakeFiles 0
+.PHONY : CMakeFiles/heuristicsNRP.dir/rule
+
+# Convenience name for target.
+heuristicsNRP: CMakeFiles/heuristicsNRP.dir/rule
+.PHONY : heuristicsNRP
+
+# clean rule for target.
+CMakeFiles/heuristicsNRP.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicsNRP.dir\build.make CMakeFiles/heuristicsNRP.dir/clean
+.PHONY : CMakeFiles/heuristicsNRP.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

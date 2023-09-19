@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libheuristicsNRP.a CMakeFiles/heuristicsNRP.dir/src/heuristicsNRP/holder/holder.cpp.obj
+C:\msys64\mingw64\bin\ranlib.exe libheuristicsNRP.a

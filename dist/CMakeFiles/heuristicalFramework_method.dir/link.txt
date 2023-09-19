@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libheuristicalFramework_method.a CMakeFiles/heuristicalFramework_method.dir/src/heuristicalFramework/method/method.cpp.obj CMakeFiles/heuristicalFramework_method.dir/src/heuristicalFramework/method/objective.cpp.obj CMakeFiles/heuristicalFramework_method.dir/src/heuristicalFramework/method/validator.cpp.obj
+C:\msys64\mingw64\bin\ranlib.exe libheuristicalFramework_method.a

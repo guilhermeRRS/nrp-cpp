@@ -116,24 +116,338 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named nrp
+# Target rules for targets named theapp
 
 # Build rule for target.
-nrp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 nrp
-.PHONY : nrp
+theapp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 theapp
+.PHONY : theapp
 
 # fast build rule for target.
-nrp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\nrp.dir\build.make CMakeFiles/nrp.dir/build
-.PHONY : nrp/fast
+theapp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\theapp.dir\build.make CMakeFiles/theapp.dir/build
+.PHONY : theapp/fast
+
+#=============================================================================
+# Target rules for targets named heuristicalFramework
+
+# Build rule for target.
+heuristicalFramework: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 heuristicalFramework
+.PHONY : heuristicalFramework
+
+# fast build rule for target.
+heuristicalFramework/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/build
+.PHONY : heuristicalFramework/fast
+
+#=============================================================================
+# Target rules for targets named heuristicsNRP
+
+# Build rule for target.
+heuristicsNRP: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 heuristicsNRP
+.PHONY : heuristicsNRP
+
+# fast build rule for target.
+heuristicsNRP/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicsNRP.dir\build.make CMakeFiles/heuristicsNRP.dir/build
+.PHONY : heuristicsNRP/fast
+
+src/heuristicalFramework/holder/holder.obj: src/heuristicalFramework/holder/holder.cpp.obj
+.PHONY : src/heuristicalFramework/holder/holder.obj
+
+# target to build an object file
+src/heuristicalFramework/holder/holder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/holder/holder.cpp.obj
+.PHONY : src/heuristicalFramework/holder/holder.cpp.obj
+
+src/heuristicalFramework/holder/holder.i: src/heuristicalFramework/holder/holder.cpp.i
+.PHONY : src/heuristicalFramework/holder/holder.i
+
+# target to preprocess a source file
+src/heuristicalFramework/holder/holder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/holder/holder.cpp.i
+.PHONY : src/heuristicalFramework/holder/holder.cpp.i
+
+src/heuristicalFramework/holder/holder.s: src/heuristicalFramework/holder/holder.cpp.s
+.PHONY : src/heuristicalFramework/holder/holder.s
+
+# target to generate assembly for a file
+src/heuristicalFramework/holder/holder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/holder/holder.cpp.s
+.PHONY : src/heuristicalFramework/holder/holder.cpp.s
+
+src/heuristicalFramework/method/method.obj: src/heuristicalFramework/method/method.cpp.obj
+.PHONY : src/heuristicalFramework/method/method.obj
+
+# target to build an object file
+src/heuristicalFramework/method/method.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/method/method.cpp.obj
+.PHONY : src/heuristicalFramework/method/method.cpp.obj
+
+src/heuristicalFramework/method/method.i: src/heuristicalFramework/method/method.cpp.i
+.PHONY : src/heuristicalFramework/method/method.i
+
+# target to preprocess a source file
+src/heuristicalFramework/method/method.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/method/method.cpp.i
+.PHONY : src/heuristicalFramework/method/method.cpp.i
+
+src/heuristicalFramework/method/method.s: src/heuristicalFramework/method/method.cpp.s
+.PHONY : src/heuristicalFramework/method/method.s
+
+# target to generate assembly for a file
+src/heuristicalFramework/method/method.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/method/method.cpp.s
+.PHONY : src/heuristicalFramework/method/method.cpp.s
+
+src/heuristicalFramework/method/objective.obj: src/heuristicalFramework/method/objective.cpp.obj
+.PHONY : src/heuristicalFramework/method/objective.obj
+
+# target to build an object file
+src/heuristicalFramework/method/objective.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/method/objective.cpp.obj
+.PHONY : src/heuristicalFramework/method/objective.cpp.obj
+
+src/heuristicalFramework/method/objective.i: src/heuristicalFramework/method/objective.cpp.i
+.PHONY : src/heuristicalFramework/method/objective.i
+
+# target to preprocess a source file
+src/heuristicalFramework/method/objective.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/method/objective.cpp.i
+.PHONY : src/heuristicalFramework/method/objective.cpp.i
+
+src/heuristicalFramework/method/objective.s: src/heuristicalFramework/method/objective.cpp.s
+.PHONY : src/heuristicalFramework/method/objective.s
+
+# target to generate assembly for a file
+src/heuristicalFramework/method/objective.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/method/objective.cpp.s
+.PHONY : src/heuristicalFramework/method/objective.cpp.s
+
+src/heuristicalFramework/method/validator.obj: src/heuristicalFramework/method/validator.cpp.obj
+.PHONY : src/heuristicalFramework/method/validator.obj
+
+# target to build an object file
+src/heuristicalFramework/method/validator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/method/validator.cpp.obj
+.PHONY : src/heuristicalFramework/method/validator.cpp.obj
+
+src/heuristicalFramework/method/validator.i: src/heuristicalFramework/method/validator.cpp.i
+.PHONY : src/heuristicalFramework/method/validator.i
+
+# target to preprocess a source file
+src/heuristicalFramework/method/validator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/method/validator.cpp.i
+.PHONY : src/heuristicalFramework/method/validator.cpp.i
+
+src/heuristicalFramework/method/validator.s: src/heuristicalFramework/method/validator.cpp.s
+.PHONY : src/heuristicalFramework/method/validator.s
+
+# target to generate assembly for a file
+src/heuristicalFramework/method/validator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/method/validator.cpp.s
+.PHONY : src/heuristicalFramework/method/validator.cpp.s
+
+src/heuristicalFramework/move/change.obj: src/heuristicalFramework/move/change.cpp.obj
+.PHONY : src/heuristicalFramework/move/change.obj
+
+# target to build an object file
+src/heuristicalFramework/move/change.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/move/change.cpp.obj
+.PHONY : src/heuristicalFramework/move/change.cpp.obj
+
+src/heuristicalFramework/move/change.i: src/heuristicalFramework/move/change.cpp.i
+.PHONY : src/heuristicalFramework/move/change.i
+
+# target to preprocess a source file
+src/heuristicalFramework/move/change.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/move/change.cpp.i
+.PHONY : src/heuristicalFramework/move/change.cpp.i
+
+src/heuristicalFramework/move/change.s: src/heuristicalFramework/move/change.cpp.s
+.PHONY : src/heuristicalFramework/move/change.s
+
+# target to generate assembly for a file
+src/heuristicalFramework/move/change.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/move/change.cpp.s
+.PHONY : src/heuristicalFramework/move/change.cpp.s
+
+src/heuristicalFramework/move/moveGen.obj: src/heuristicalFramework/move/moveGen.cpp.obj
+.PHONY : src/heuristicalFramework/move/moveGen.obj
+
+# target to build an object file
+src/heuristicalFramework/move/moveGen.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/move/moveGen.cpp.obj
+.PHONY : src/heuristicalFramework/move/moveGen.cpp.obj
+
+src/heuristicalFramework/move/moveGen.i: src/heuristicalFramework/move/moveGen.cpp.i
+.PHONY : src/heuristicalFramework/move/moveGen.i
+
+# target to preprocess a source file
+src/heuristicalFramework/move/moveGen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/move/moveGen.cpp.i
+.PHONY : src/heuristicalFramework/move/moveGen.cpp.i
+
+src/heuristicalFramework/move/moveGen.s: src/heuristicalFramework/move/moveGen.cpp.s
+.PHONY : src/heuristicalFramework/move/moveGen.s
+
+# target to generate assembly for a file
+src/heuristicalFramework/move/moveGen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/move/moveGen.cpp.s
+.PHONY : src/heuristicalFramework/move/moveGen.cpp.s
+
+src/heuristicalFramework/notImplemented.obj: src/heuristicalFramework/notImplemented.cpp.obj
+.PHONY : src/heuristicalFramework/notImplemented.obj
+
+# target to build an object file
+src/heuristicalFramework/notImplemented.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/notImplemented.cpp.obj
+.PHONY : src/heuristicalFramework/notImplemented.cpp.obj
+
+src/heuristicalFramework/notImplemented.i: src/heuristicalFramework/notImplemented.cpp.i
+.PHONY : src/heuristicalFramework/notImplemented.i
+
+# target to preprocess a source file
+src/heuristicalFramework/notImplemented.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/notImplemented.cpp.i
+.PHONY : src/heuristicalFramework/notImplemented.cpp.i
+
+src/heuristicalFramework/notImplemented.s: src/heuristicalFramework/notImplemented.cpp.s
+.PHONY : src/heuristicalFramework/notImplemented.s
+
+# target to generate assembly for a file
+src/heuristicalFramework/notImplemented.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/notImplemented.cpp.s
+.PHONY : src/heuristicalFramework/notImplemented.cpp.s
+
+src/heuristicalFramework/problem/data.obj: src/heuristicalFramework/problem/data.cpp.obj
+.PHONY : src/heuristicalFramework/problem/data.obj
+
+# target to build an object file
+src/heuristicalFramework/problem/data.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/problem/data.cpp.obj
+.PHONY : src/heuristicalFramework/problem/data.cpp.obj
+
+src/heuristicalFramework/problem/data.i: src/heuristicalFramework/problem/data.cpp.i
+.PHONY : src/heuristicalFramework/problem/data.i
+
+# target to preprocess a source file
+src/heuristicalFramework/problem/data.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/problem/data.cpp.i
+.PHONY : src/heuristicalFramework/problem/data.cpp.i
+
+src/heuristicalFramework/problem/data.s: src/heuristicalFramework/problem/data.cpp.s
+.PHONY : src/heuristicalFramework/problem/data.s
+
+# target to generate assembly for a file
+src/heuristicalFramework/problem/data.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/problem/data.cpp.s
+.PHONY : src/heuristicalFramework/problem/data.cpp.s
+
+src/heuristicalFramework/problem/model.obj: src/heuristicalFramework/problem/model.cpp.obj
+.PHONY : src/heuristicalFramework/problem/model.obj
+
+# target to build an object file
+src/heuristicalFramework/problem/model.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/problem/model.cpp.obj
+.PHONY : src/heuristicalFramework/problem/model.cpp.obj
+
+src/heuristicalFramework/problem/model.i: src/heuristicalFramework/problem/model.cpp.i
+.PHONY : src/heuristicalFramework/problem/model.i
+
+# target to preprocess a source file
+src/heuristicalFramework/problem/model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/problem/model.cpp.i
+.PHONY : src/heuristicalFramework/problem/model.cpp.i
+
+src/heuristicalFramework/problem/model.s: src/heuristicalFramework/problem/model.cpp.s
+.PHONY : src/heuristicalFramework/problem/model.s
+
+# target to generate assembly for a file
+src/heuristicalFramework/problem/model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/problem/model.cpp.s
+.PHONY : src/heuristicalFramework/problem/model.cpp.s
+
+src/heuristicalFramework/problem/problem.obj: src/heuristicalFramework/problem/problem.cpp.obj
+.PHONY : src/heuristicalFramework/problem/problem.obj
+
+# target to build an object file
+src/heuristicalFramework/problem/problem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/problem/problem.cpp.obj
+.PHONY : src/heuristicalFramework/problem/problem.cpp.obj
+
+src/heuristicalFramework/problem/problem.i: src/heuristicalFramework/problem/problem.cpp.i
+.PHONY : src/heuristicalFramework/problem/problem.i
+
+# target to preprocess a source file
+src/heuristicalFramework/problem/problem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/problem/problem.cpp.i
+.PHONY : src/heuristicalFramework/problem/problem.cpp.i
+
+src/heuristicalFramework/problem/problem.s: src/heuristicalFramework/problem/problem.cpp.s
+.PHONY : src/heuristicalFramework/problem/problem.s
+
+# target to generate assembly for a file
+src/heuristicalFramework/problem/problem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/problem/problem.cpp.s
+.PHONY : src/heuristicalFramework/problem/problem.cpp.s
+
+src/heuristicalFramework/problem/solution.obj: src/heuristicalFramework/problem/solution.cpp.obj
+.PHONY : src/heuristicalFramework/problem/solution.obj
+
+# target to build an object file
+src/heuristicalFramework/problem/solution.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/problem/solution.cpp.obj
+.PHONY : src/heuristicalFramework/problem/solution.cpp.obj
+
+src/heuristicalFramework/problem/solution.i: src/heuristicalFramework/problem/solution.cpp.i
+.PHONY : src/heuristicalFramework/problem/solution.i
+
+# target to preprocess a source file
+src/heuristicalFramework/problem/solution.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/problem/solution.cpp.i
+.PHONY : src/heuristicalFramework/problem/solution.cpp.i
+
+src/heuristicalFramework/problem/solution.s: src/heuristicalFramework/problem/solution.cpp.s
+.PHONY : src/heuristicalFramework/problem/solution.s
+
+# target to generate assembly for a file
+src/heuristicalFramework/problem/solution.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicalFramework.dir\build.make CMakeFiles/heuristicalFramework.dir/src/heuristicalFramework/problem/solution.cpp.s
+.PHONY : src/heuristicalFramework/problem/solution.cpp.s
+
+src/heuristicsNRP/holder/holder.obj: src/heuristicsNRP/holder/holder.cpp.obj
+.PHONY : src/heuristicsNRP/holder/holder.obj
+
+# target to build an object file
+src/heuristicsNRP/holder/holder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicsNRP.dir\build.make CMakeFiles/heuristicsNRP.dir/src/heuristicsNRP/holder/holder.cpp.obj
+.PHONY : src/heuristicsNRP/holder/holder.cpp.obj
+
+src/heuristicsNRP/holder/holder.i: src/heuristicsNRP/holder/holder.cpp.i
+.PHONY : src/heuristicsNRP/holder/holder.i
+
+# target to preprocess a source file
+src/heuristicsNRP/holder/holder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicsNRP.dir\build.make CMakeFiles/heuristicsNRP.dir/src/heuristicsNRP/holder/holder.cpp.i
+.PHONY : src/heuristicsNRP/holder/holder.cpp.i
+
+src/heuristicsNRP/holder/holder.s: src/heuristicsNRP/holder/holder.cpp.s
+.PHONY : src/heuristicsNRP/holder/holder.s
+
+# target to generate assembly for a file
+src/heuristicsNRP/holder/holder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heuristicsNRP.dir\build.make CMakeFiles/heuristicsNRP.dir/src/heuristicsNRP/holder/holder.cpp.s
+.PHONY : src/heuristicsNRP/holder/holder.cpp.s
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\nrp.dir\build.make CMakeFiles/nrp.dir/src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\theapp.dir\build.make CMakeFiles/theapp.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -141,7 +455,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\nrp.dir\build.make CMakeFiles/nrp.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\theapp.dir\build.make CMakeFiles/theapp.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -149,7 +463,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\nrp.dir\build.make CMakeFiles/nrp.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\theapp.dir\build.make CMakeFiles/theapp.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -160,7 +474,45 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... nrp
+	@echo ... heuristicalFramework
+	@echo ... heuristicsNRP
+	@echo ... theapp
+	@echo ... src/heuristicalFramework/holder/holder.obj
+	@echo ... src/heuristicalFramework/holder/holder.i
+	@echo ... src/heuristicalFramework/holder/holder.s
+	@echo ... src/heuristicalFramework/method/method.obj
+	@echo ... src/heuristicalFramework/method/method.i
+	@echo ... src/heuristicalFramework/method/method.s
+	@echo ... src/heuristicalFramework/method/objective.obj
+	@echo ... src/heuristicalFramework/method/objective.i
+	@echo ... src/heuristicalFramework/method/objective.s
+	@echo ... src/heuristicalFramework/method/validator.obj
+	@echo ... src/heuristicalFramework/method/validator.i
+	@echo ... src/heuristicalFramework/method/validator.s
+	@echo ... src/heuristicalFramework/move/change.obj
+	@echo ... src/heuristicalFramework/move/change.i
+	@echo ... src/heuristicalFramework/move/change.s
+	@echo ... src/heuristicalFramework/move/moveGen.obj
+	@echo ... src/heuristicalFramework/move/moveGen.i
+	@echo ... src/heuristicalFramework/move/moveGen.s
+	@echo ... src/heuristicalFramework/notImplemented.obj
+	@echo ... src/heuristicalFramework/notImplemented.i
+	@echo ... src/heuristicalFramework/notImplemented.s
+	@echo ... src/heuristicalFramework/problem/data.obj
+	@echo ... src/heuristicalFramework/problem/data.i
+	@echo ... src/heuristicalFramework/problem/data.s
+	@echo ... src/heuristicalFramework/problem/model.obj
+	@echo ... src/heuristicalFramework/problem/model.i
+	@echo ... src/heuristicalFramework/problem/model.s
+	@echo ... src/heuristicalFramework/problem/problem.obj
+	@echo ... src/heuristicalFramework/problem/problem.i
+	@echo ... src/heuristicalFramework/problem/problem.s
+	@echo ... src/heuristicalFramework/problem/solution.obj
+	@echo ... src/heuristicalFramework/problem/solution.i
+	@echo ... src/heuristicalFramework/problem/solution.s
+	@echo ... src/heuristicsNRP/holder/holder.obj
+	@echo ... src/heuristicsNRP/holder/holder.i
+	@echo ... src/heuristicsNRP/holder/holder.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

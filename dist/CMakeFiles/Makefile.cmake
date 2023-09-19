@@ -49,5 +49,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/nrp.dir/DependInfo.cmake"
+  "CMakeFiles/theapp.dir/DependInfo.cmake"
+  "CMakeFiles/heuristicalFramework.dir/DependInfo.cmake"
+  "CMakeFiles/heuristicsNRP.dir/DependInfo.cmake"
   )

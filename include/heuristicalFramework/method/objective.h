@@ -3,6 +3,10 @@
 
 #include "../notImplemented.h"
 
+#include "../problem/solution.h"
+#include "../problem/data.h"
+#include "../move/change.h"
+
 #include <string>
 #include <vector>
 

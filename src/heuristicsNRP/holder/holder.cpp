@@ -1,34 +1,38 @@
-#include "../../heuristicalFramework/heuristicalFramework.h"
-#include <iostream>
-#include <vector>
+#include "../../include/heuristicsNRP/holder/holder.h"
 
-using namespace std;
-
-// class HolderNRP : public Holder<Tsol, Tchange, Tm>
-class HolderNRP : public Holder<void, void, void>
+/*
+            constructor
+*/
+template <typename Tsol, typename Tchange, typename Tm>
+HolderNRP<Tsol, Tchange, Tm>::HolderNRP()
 {
+    cout << "Creating" << endl;
+};
 
-public:
-    // constructor
-    HolderNRP() { cout << "Alive" << endl; };
+/*
+            debug functions
+*/
+template <typename Tsol, typename Tchange, typename Tm>
+void HolderNRP<Tsol, Tchange, Tm>::debugCmd()
+{
+    cout << "debugCmd" << endl;
+};
+template <typename Tsol, typename Tchange, typename Tm>
+string HolderNRP<Tsol, Tchange, Tm>::debugStr()
+{
+    return "debugStr";
+};
 
-    // debug functions
-    void debugCmd()
-    {
-        cout << "Me" << endl;
-    }
-    string debugStr()
-    {
-        return "Me";
-    }
-
-    // documentation functions
-    void docCmd()
-    {
-        cout << "Me" << endl;
-    }
-    string docStr()
-    {
-        return "Me";
-    }
+/*
+            documentation functions
+*/
+template <typename Tsol, typename Tchange, typename Tm>
+void HolderNRP<Tsol, Tchange, Tm>::docCmd()
+{
+    cout << "docCmd" << endl;
+};
+template <typename Tsol, typename Tchange, typename Tm>
+string HolderNRP<Tsol, Tchange, Tm>::docStr()
+{
+    return "docStr";
 };

@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libheuristicalFramework_move.a CMakeFiles/heuristicalFramework_move.dir/src/heuristicalFramework/move/change.cpp.obj CMakeFiles/heuristicalFramework_move.dir/src/heuristicalFramework/move/moveGen.cpp.obj
+C:\msys64\mingw64\bin\ranlib.exe libheuristicalFramework_move.a

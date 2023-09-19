@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libheuristicalFramework_holder.a CMakeFiles/heuristicalFramework_holder.dir/src/heuristicalFramework/holder/holder.cpp.obj
+C:\msys64\mingw64\bin\ranlib.exe libheuristicalFramework_holder.a

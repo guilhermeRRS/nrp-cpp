@@ -239,6 +239,9 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=OFF
 
+//No help, variable specified on the command line.
+DEBUG_CMAKE:UNINITIALIZED=ON
+
 //Value Computed by CMake
 NRP_BINARY_DIR:STATIC=C:/Users/user/Desktop/NRP/dist
 
@@ -247,6 +250,15 @@ NRP_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 NRP_SOURCE_DIR:STATIC=C:/Users/user/Desktop/NRP
+
+//Dependencies for the target
+heuristicalFramework_holder_LIB_DEPENDS:STATIC=general;heuristicalFramework_problem;general;heuristicalFramework_method;
+
+//Dependencies for the target
+heuristicalFramework_method_LIB_DEPENDS:STATIC=general;heuristicalFramework_problem;general;heuristicalFramework_move;
+
+//Dependencies for the target
+heuristicalFramework_move_LIB_DEPENDS:STATIC=general;heuristicalFramework_problem;
 
 
 ########################
